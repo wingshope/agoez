@@ -47,7 +47,7 @@ export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/wingsofhope123/permission/main/ip > /root/tmp
+    curl -sS https://raw.githubusercontent.com/wingshope/permission/main/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -65,7 +65,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/wingsofhope123/permission/main/ip | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/wingshope/permission/main/ip | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -82,7 +82,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/wingsofhope123/permission/main/ip | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/wingshope/permission/main/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -150,8 +150,8 @@ shadowsockslink="ss://${shadowsocks_base64e}@$domain:443?plugin=xray-plugin;mux=
 shadowsockslink1="ss://${shadowsocks_base64e}@$domain:443?plugin=xray-plugin;mux=0;serviceName=ss-grpc;host=$domain;tls#${user}"
 
 clear
-echo -e "$BICyan═════════════XRAY/SSWS══════════════${NC}"
-echo -e "$BICyan════════════════════════════════════${NC}"
+echo -e "$PURPLE═════════════XRAY/SSWS══════════════${NC}"
+echo -e "$PURPLE════════════════════════════════════${NC}"
 echo -e "Remarks      : ${user}" 
 echo -e "Expired On   : $exp"  
 echo -e "Domain       : ${domain}"  
@@ -162,14 +162,14 @@ echo -e "Cipers       : aes-128-gcm"
 echo -e "Network      : ws/grpc"  
 echo -e "Path         : /ss-ws"  
 echo -e "ServiceName  : ss-grpc"  
-echo -e "$BICyan════════════════════════════════════${NC}" 
+echo -e "$PURPLE════════════════════════════════════${NC}" 
 echo -e "Link TLS : "
 echo -e "${shadowsockslink}"  
-echo -e "$BICyan════════════════════════════════════${NC} "
+echo -e "$PURPLE════════════════════════════════════${NC} "
 echo -e "Link GRPC : "
 echo -e "${shadowsockslink1}"  
-echo -e "$BICyan════════════════════════════════════${NC} "
-echo -e "$BICyan Wings Premium VPN Auto Script Service${NC}" 
+echo -e "$PURPLE════════════════════════════════════${NC} "
+echo -e "$PURPLE Wings Premium VPN Auto Script Service${NC}" 
 echo ""  
 read -n 1 -s -r -p "   Press any key to back on menu"
 menu-ss
@@ -361,19 +361,19 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/config.json")
     fi
 }
 clear
-echo -e "$BICyan┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$BICyan│                SSWS PANEL MENU                  │$NC"
-echo -e "$BICyan└─────────────────────────────────────────────────┘${NC}"
-echo -e " $BICyan┌───────────────────────────────────────────────┐${NC}"
-echo -e "     ${BICyan}[${BIWhite}1${BICyan}] Create Shadowsock Account     "
-echo -e "     ${BICyan}[${BIWhite}2${BICyan}] Trial Shadowsock Account     "
-echo -e "     ${BICyan}[${BIWhite}3${BICyan}] Delete Shadowsock Account     "
-echo -e "     ${BICyan}[${BIWhite}4${BICyan}] Renew Shadowsock Account     "
-echo -e "     ${BICyan}[${BIWhite}5${BICyan}] Cek User Active XRAY     "
-echo -e "     ${BICyan}[${BIWhite}6${BICyan}] Detail Shadowsock Account     "
+echo -e "$PURPLE┌─────────────────────────────────────────────────┐${NC}"
+echo -e "$PURPLE│                SSWS PANEL MENU                  │$NC"
+echo -e "$PURPLE└─────────────────────────────────────────────────┘${NC}"
+echo -e " $PURPLE┌───────────────────────────────────────────────┐${NC}"
+echo -e "     ${PURPLE}[${BIWhite}1${BICyan}] Create Shadowsock Account     "
+echo -e "     ${PURPLE}[${BIWhite}2${BICyan}] Trial Shadowsock Account     "
+echo -e "     ${PURPLE}[${BIWhite}3${BICyan}] Delete Shadowsock Account     "
+echo -e "     ${PURPLE}[${BIWhite}4${BICyan}] Renew Shadowsock Account     "
+echo -e "     ${PURPLE}[${BIWhite}5${BICyan}] Cek User Active XRAY     "
+echo -e "     ${PURPLE}[${BIWhite}6${BICyan}] Detail Shadowsock Account     "
 echo -e ""
-echo -e "     ${BICyan}[${BIWhite}0${BICyan}] Back To Menu     "
-echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
+echo -e "     ${PURPLE}[${BIWhite}0${BICyan}] Back To Menu     "
+echo -e " ${PURPLE}└─────────────────────────────────────────────────────┘${NC}"
 echo ""
 read -p " Select menu : " opt
 echo -e ""
