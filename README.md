@@ -29,3 +29,5 @@
 ✅ Vless WS none TLS : 80 <br>
 ✅ Stunnel4 : 447,777 <br>
 ✅ UDP&DNS
+
+![Screenshot_2023-07-07-10-49-50-711_com server auditor ssh client-edit](https://github.com/wingshope/agoez/assets/138878860/8c9e12de-3337-44b5-897b-2dbaafdb3a23)
