@@ -48,9 +48,9 @@ export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 
 clear
-echo -e "$BICyan┌──────────────────────────────────────────┐${NC}"
-echo -e "$BICyan│           SERVER PORT INFORMATION        │$NC"       
-echo -e "$BICyan└──────────────────────────────────────────┘${NC}"
+echo -e "$PURPLE┌──────────────────────────────────────────┐${NC}"
+echo -e "$PURPLE│           SERVER PORT INFORMATION        │$NC"       
+echo -e "$PURPLE└──────────────────────────────────────────┘${NC}"
 echo -e "\033[1;93m  >Port SSH Websocket       :80\e[0m"
 echo -e "\033[1;93m  >Port SSH Websocket SSL   :443\e[0m"
 echo -e "\033[1;93m  >Port SSH SSL             :447,777\e[0m"
