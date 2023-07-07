@@ -47,7 +47,7 @@ export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/wingsofhope123/permission/main/ip > /root/tmp
+    curl -sS https://raw.githubusercontent.com/wingshope/permission/main/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -65,7 +65,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/wingsofhope123/permission/main/ip | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/wingshope/permission/main/ip | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -82,7 +82,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/wingsofhope123/permission/main/ip | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/wingshope/permission/main/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -144,7 +144,7 @@ trojanlink="trojan://${uuid}@isi_bug_disini:443?path=%2Ftrojan-ws&security=tls&h
 
 clear
 echo -e ""
-echo -e "$BIBlue════════════XRAY/TROJANWS════════════${NC}"
+echo -e "$PURPLE════════════XRAY/TROJANWS════════════${NC}"
 echo -e "\033[0;34m════════════════════════════════════\033[0m"
 echo -e "Remarks        : ${user}"
 echo -e "Host/IP        : ${domain}"
@@ -179,7 +179,7 @@ systemctl restart xray
 trojanlink1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=bug.com#${user}"
 trojanlink="trojan://${uuid}@isi_bug_disini:443?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
 clear
-echo -e "$BIBlue════════════XRAY/TROJANWS════════════${NC}"
+echo -e "$PURPLE════════════XRAY/TROJANWS════════════${NC}"
 echo -e "\033[0;34m════════════════════════════════════\033[0m"
 echo -e "Remarks        : ${user}"
 echo -e "Host/IP        : ${domain}"
@@ -342,19 +342,19 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/config.json")
     fi
 }
 clear
-echo -e "$BICyan┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$BICyan│                    TROJAN MENU                  │$NC"
-echo -e "$BICyan└─────────────────────────────────────────────────┘${NC}"
-echo -e " $BICyan┌───────────────────────────────────────────────┐${NC}"
-echo -e "     ${BICyan}[${BIWhite}1${BICyan}] Create Trojan Account      "
-echo -e "     ${BICyan}[${BIWhite}2${BICyan}] Trial Trojan Account      "
-echo -e "     ${BICyan}[${BIWhite}3${BICyan}] Delete Account Trojan      "
-echo -e "     ${BICyan}[${BIWhite}4${BICyan}] Renew Account Trojan      "
-echo -e "     ${BICyan}[${BIWhite}5${BICyan}] Cek User Active XRAY     "
-echo -e "     ${BICyan}[${BIWhite}6${BICyan}] Cek Detail Trojan      "
+echo -e "$PURPLE┌─────────────────────────────────────────────────┐${NC}"
+echo -e "$PURPLE│                    TROJAN MENU                  │$NC"
+echo -e "$PURPLE└─────────────────────────────────────────────────┘${NC}"
+echo -e " $PURPLE┌───────────────────────────────────────────────┐${NC}"
+echo -e "     ${PURPLE}[${BIWhite}1${BICyan}] Create Trojan Account      "
+echo -e "     ${PURPLE}[${BIWhite}2${BICyan}] Trial Trojan Account      "
+echo -e "     ${PURPLE}[${BIWhite}3${BICyan}] Delete Account Trojan      "
+echo -e "     ${PURPLE}[${BIWhite}4${BICyan}] Renew Account Trojan      "
+echo -e "     ${PURPLE}[${BIWhite}5${BICyan}] Cek User Active XRAY     "
+echo -e "     ${PURPLE}[${BIWhite}6${BICyan}] Cek Detail Trojan      "
 
 
-echo -e " ${BICyan}└──────────────────────────────────────────────┘${NC}"
+echo -e " ${PURPLE}└──────────────────────────────────────────────┘${NC}"
 echo ""
 read -p " Select menu : " opt
 echo -e ""
