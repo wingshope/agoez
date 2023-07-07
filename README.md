@@ -1,10 +1,10 @@
 # Wings XRAY V2
-<pre><code>apt update && apt upgrade -y && update-grub && sleep 2 && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt upgrade && apt install -y bzip2 gzip coreutils screen curl unzip && wget -q https://raw.githubusercontent.com/wingsofhope123/agoez09/main/setup.sh && chmod +x setup.sh && ./setup.sh</code></pre>
+<pre><code>apt update && apt upgrade -y && update-grub && sleep 2 && sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt upgrade && apt install -y bzip2 gzip coreutils screen curl unzip && wget -q https://raw.githubusercontent.com/wingshope/agoez/agoez09/main/setup.sh && chmod +x setup.sh && ./setup.sh</code></pre>
 
 ## HARGA AUTOSCRIPT
 ### _1 Bulan 10k_
 ### _Lifetime 2x ganti ip 40K_
-### _Source script 400k_
+### _Source script 250k_
 
 ## Silahkan Hubungi
 ### https://wa.me/6282261333421
