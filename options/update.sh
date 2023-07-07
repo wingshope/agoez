@@ -1,5 +1,5 @@
 #wget https://github.com/${GitUser}/
-GitUser="wingsofhope123"
+GitUser="wingshope"
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
 		exit 1
@@ -10,7 +10,7 @@ if [ "$(systemd-detect-virt)" == "openvz" ]; then
 fi
 echo ""
 version=$(cat /home/ver)
-ver=$( curl https://raw.githubusercontent.com/${GitUser}/agoez09/main/version )
+ver=$( curl https://raw.githubusercontent.com/${GitUser}/agoez/main/version )
 clear
 # LINE COLOUR
 line=$(cat /etc/line)
@@ -28,7 +28,7 @@ Info1="${Green_font_prefix}($version)${Font_color_suffix}"
 Info2="${Green_font_prefix}(LATEST VERSION)${Font_color_suffix}"
 Error="Version ${Green_font_prefix}[$ver]${Font_color_suffix} available${Red_font_prefix}[Please Update]${Font_color_suffix}"
 version=$(cat /home/ver)
-new_version=$( curl https://raw.githubusercontent.com/${GitUser}/agoez09/main/newversion | grep $version )
+new_version=$( curl https://raw.githubusercontent.com/${GitUser}/agoez/main/newversion | grep $version )
 #Status Version
 if [ $version = $new_version ]; then
 sts="${Info2}"
@@ -55,7 +55,7 @@ read -p "PPlease Choose 1 or x : " option2
 case $option2 in
 1)
 version=$(cat /home/ver)
-new_version=$( curl https://raw.githubusercontent.com/${GitUser}/agoez09/main/newversion | grep $version )
+new_version=$( curl https://raw.githubusercontent.com/${GitUser}/agoez/main/newversion | grep $version )
 if [ $version = $new_version ]; then
 clear
 echo ""
@@ -83,7 +83,7 @@ sleep 1
 echo ""
 # UPDATE RUN-UPDATE
 cd /usr/bin
-wget -O run-update "https://raw.githubusercontent.com/${GitUser}/agoez09/main/options/update.sh"
+wget -O run-update "https://raw.githubusercontent.com/${GitUser}/agoez/main/options/update.sh"
 chmod +x run-update
 # RUN UPDATE
 echo ""
@@ -95,35 +95,35 @@ echo ""
 echo -e "\e[0;32mNew Version Downloading started!\e[0m"
 sleep 2
 cd /usr/bin
-wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/usernew.sh"
-wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/add-ws.sh"
-wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/add-ssws.sh"
-wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/add-vless.sh"
-wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/add-tr.sh"
-wget -q -O /usr/bin/autoreboot "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/options/autoreboot.sh"
-wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/options/restart.sh"
-wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/options/tendang.sh"
-wget -q -O /usr/bin/clearlog "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/options/clearlog.sh"
-wget -q -O /usr/bin/running "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/options/running.sh"
+wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/wingshope/agoez/main/usernew.sh"
+wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/wingshope/agoez/main/add-ws.sh"
+wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/wingshope/agoez/main/add-ssws.sh"
+wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/wingshope/agoez/main/add-vless.sh"
+wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/wingshope/agoez/main/add-tr.sh"
+wget -q -O /usr/bin/autoreboot "https://raw.githubusercontent.com/wingshope/agoez/main/options/autoreboot.sh"
+wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/wingshope/agoez/main/options/restart.sh"
+wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/wingshope/agoez/main/options/tendang.sh"
+wget -q -O /usr/bin/clearlog "https://raw.githubusercontent.com/wingshope/agoez/main/options/clearlog.sh"
+wget -q -O /usr/bin/running "https://raw.githubusercontent.com/wingshope/agoez/main/options/running.sh"
 #wget -q -O /usr/bin/cek-trafik "https://raw.githubusercontent.com/arzvpn/Arzv/main/options/cek-trafik.sh"
-wget -q -O /usr/bin/speedtest "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/tools/speedtest_cli.py"
-wget -q -O /usr/bin/cek-bandwidth "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/options/cek-bandwidth.sh"
-wget -q -O /usr/bin/limitspeed "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/options/limitspeed.sh"
-wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/menu/menu-vless.sh"
-wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/menu/menu-vmess.sh"
-wget -q -O /usr/bin/menu-ss "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/menu/menu-ss.sh"
-wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/menu/menu-trojan.sh"
-wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/menu/menu-ssh.sh"
-wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/menu/menu-backup.sh"
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/menu/menu.sh"
-wget -q -O /usr/bin/webmin "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/options/webmin.sh"
-wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/xp.sh"
-wget -q -O /usr/bin/update "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/options/update.sh"
-wget -q -O /usr/bin/addhost "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/menu/addhost.sh"
-wget -q -O /usr/bin/certxray "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/menu/crt.sh"
-wget -q -O /usr/bin/menu-set "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/menu/menu-set.sh"
-wget -q -O /usr/bin/info "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/options/info.sh"
-wget -q -O /usr/bin/infoserv "https://raw.githubusercontent.com/wingsofhope123/agoez09/main/options/infoserv.sh"
+wget -q -O /usr/bin/speedtest "https://raw.githubusercontent.com/wingshope/agoez/main/tools/speedtest_cli.py"
+wget -q -O /usr/bin/cek-bandwidth "https://raw.githubusercontent.com/wingshope/agoez/main/options/cek-bandwidth.sh"
+wget -q -O /usr/bin/limitspeed "https://raw.githubusercontent.com/wingshope/agoez/main/options/limitspeed.sh"
+wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/wingshope/agoez/main/menu/menu-vless.sh"
+wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/wingshope/agoez/main/menu/menu-vmess.sh"
+wget -q -O /usr/bin/menu-ss "https://raw.githubusercontent.com/wingshope/agoez/main/menu/menu-ss.sh"
+wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/wingshope/agoez/main/menu/menu-trojan.sh"
+wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/wingshope/agoez/main/menu/menu-ssh.sh"
+wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/wingshope/agoez/main/menu/menu-backup.sh"
+wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/wingshope/agoez/main/menu/menu.sh"
+wget -q -O /usr/bin/webmin "https://raw.githubusercontent.com/wingshope/agoez/main/options/webmin.sh"
+wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/wingshope/agoez/main/xp.sh"
+wget -q -O /usr/bin/update "https://raw.githubusercontent.com/wingshope/agoez/main/options/update.sh"
+wget -q -O /usr/bin/addhost "https://raw.githubusercontent.com/wingshope/agoez/main/menu/addhost.sh"
+wget -q -O /usr/bin/certxray "https://raw.githubusercontent.com/wingshope/agoez/main/menu/crt.sh"
+wget -q -O /usr/bin/menu-set "https://raw.githubusercontent.com/wingshope/agoez/main/menu/menu-set.sh"
+wget -q -O /usr/bin/info "https://raw.githubusercontent.com/wingshope/agoez/main/options/info.sh"
+wget -q -O /usr/bin/infoserv "https://raw.githubusercontent.com/wingshope/agoez/main/options/infoserv.sh"
 chmod +x /usr/bin/usernew
 chmod +x /usr/bin/add-ws
 chmod +x /usr/bin/add-ssws
@@ -156,7 +156,7 @@ clear
 echo -e ""
 echo -e "\e[0;32mDownloaded successfully!\e[0m"
 echo ""
-ver=$( curl https://raw.githubusercontent.com/${GitUser}/agoez09/main/version )
+ver=$( curl https://raw.githubusercontent.com/${GitUser}/agoez/main/version )
 sleep 1
 echo -e "\e[0;32mPatching New Update, Please Wait...\e[0m"
 echo ""
