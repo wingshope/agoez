@@ -206,7 +206,7 @@ echo -e "  ${PURPLE}  [${BIGreen}10${PURPLE}]${GREEN}INSTAL UDP ${NC}"
 echo -e "  ${PURPLE}  [${BIGreen}x${PURPLE}]${GREEN} EXIT ${NC}"  
 echo -e "${PURPLE} └─────────────────────────────────────────────────────┘${NC}"
  echo -e "${PURPLE} ┌─────────────────────────────────────────────────────┐${NC}" 
- echo -e "${PURPLE} │ ${BIGreen}     HARI ini${NC}: ${red}$ttoday$NC ${BIGreen}KEMARIN${NC}: ${red}$tyest$NC ${BIGreen}BULAN${NC}: ${red}$tmon$NC $NC" 
+ echo -e "${PURPLE} │  ${BIGreen}     HARI ini${NC}: ${red}$ttoday$NC ${BIGreen}KEMARIN${NC}: ${red}$tyest$NC ${BIGreen}BULAN${NC}: ${red}$tmon$NC $NC" 
  echo -e "${PURPLE} └─────────────────────────────────────────────────────┘${NC}"
 DATE=$(date +'%d %B %Y')
 datediff() {
