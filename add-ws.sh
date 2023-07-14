@@ -216,7 +216,7 @@ echo -e "${BIBlue}════════════════════�
 echo -e "Link GRPC : "
 echo -e "${vmesslink3}"
 echo -e "${BIBlue}════════════════════════════════${NC}" 
-echo -e "${BICyan} Wings Premium VPN Auto Script Service${NC}" 
+echo -e "${BICyan}     Wings Auto Script${NC}" 
 echo "" | tee -a /etc/log-create-user.log
 rm /etc/xray/$user-tls.json > /dev/null 2>&1
 rm /etc/xray/$user-none.json > /dev/null 2>&1
