@@ -189,8 +189,8 @@ vmesslink3="vmess://$(echo $grpc | base64 -w 0)"
 systemctl restart xray > /dev/null 2>&1
 service cron restart > /dev/null 2>&1
 clear
-echo -e "${BIBlue}═══════════XRAY/VMESS═══════════${NC}"
-echo -e "${BIBlue}════════════════════════════════${NC}"
+echo -e "${PURPLE}═══════════XRAY/VMESS═══════════${NC}"
+echo -e "${PURPLE}════════════════════════════════${NC}"
 echo -e "Remarks       : ${user}"
 echo -e "Expired On    : $exp" 
 echo -e "Domain        : ${domain}" 
@@ -206,17 +206,17 @@ echo -e "Path          : /worryfree"
 echo -e "Path          : http://bug/worryfree" 
 echo -e "Path          : /kuota-habis" 
 echo -e "ServiceName   : vmess-grpc" 
-echo -e "${BIBlue}════════════════════════════════${NC}" 
+echo -e "${PURPLE}════════════════════════════════${NC}" 
 echo -e "Link TLS : "
 echo -e "${vmesslink1}" 
-echo -e "${BIBlue}════════════════════════════════${NC} "
+echo -e "${PURPLE}════════════════════════════════${NC} "
 echo -e "Link none TLS : "
 echo -e "${vmesslink2}" 
-echo -e "${BIBlue}════════════════════════════════${NC} "
+echo -e "${PURPLE}════════════════════════════════${NC} "
 echo -e "Link GRPC : "
 echo -e "${vmesslink3}"
-echo -e "${BIBlue}════════════════════════════════${NC}" 
-echo -e "${BICyan}     Wings Auto Script${NC}" 
+echo -e "${PURPLE}════════════════════════════════${NC}" 
+echo -e "${PURPLE}        Wings Auto Script${NC}" 
 echo "" | tee -a /etc/log-create-user.log
 rm /etc/xray/$user-tls.json > /dev/null 2>&1
 rm /etc/xray/$user-none.json > /dev/null 2>&1
