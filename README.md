@@ -1,4 +1,6 @@
-# Wings XRAY V2
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&center=true&vCenter=true&lines=WINGS+MULTIPORT+ONLY" />
+</p>
 # UPDATE UNTUK DEBIAN
 apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot
 # UPDATE UNTUK UBUNTU
