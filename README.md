@@ -37,4 +37,4 @@ apt update && apt upgrade -y && update-grub && sleep 2 && reboot
 ✅ UDP&DNS : 1-65000 <br>
 ✅ Enhanced
 
-![Screenshot_2023-07-07-10-49-50-711_com server auditor ssh client-edit](https://github.com/wingshope/agoez/assets/138878860/8c9e12de-3337-44b5-897b-2dbaafdb3a23)
+![IMG_20231029_230416](https://github.com/wingshope/agoez/assets/138878860/7b41ef95-c599-4657-b8de-4e90b0de4ef5)
