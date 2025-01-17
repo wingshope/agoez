@@ -12,7 +12,7 @@ apt update && apt upgrade -y && update-grub && sleep 2 && reboot
 
 ## WAJIB IZIN IP
 
-## Silahkan Hubungi
+## Silahkan Hubungi/DONASI
 ### https://wa.me/6282261333421
 
 ## ⏩ AUTOSCRIPT WEBSOCKET MULTIPORT 443 DETAILS ⏪
